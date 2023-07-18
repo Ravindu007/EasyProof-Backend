@@ -2,7 +2,7 @@ require("dotenv").config()
 const mongoose = require("mongoose")
 
 
-// firebase 
+// firebase configuration
 const admin = require("firebase-admin")
 const serviceAccount = require("./serviceAccount.json")
 
