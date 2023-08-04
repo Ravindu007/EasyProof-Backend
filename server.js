@@ -1,5 +1,6 @@
 require("dotenv").config()
 const mongoose = require("mongoose")
+const cors = require("cors")
 
 
 // firebase configuration
@@ -30,6 +31,9 @@ const app = express()
 
 // middleware 
 app.use(express.json())
+app.use(cors({
+  origin: '*'
+}));
 
 
 app.use((req,res,next)=>{
